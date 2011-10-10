@@ -1,0 +1,148 @@
+L	06	294	Images of East Asia: Poetry, Painting, and Meditation in East Asian Traditions
+L	03	111	Introduction to Asian Art
+L	03	294	Images of East Asia: Utopias of the Mind: Poetry, Painting and Meditation in East Asian Traditions 
+L	03	3410	The Arts In Japanese Society
+L	07	111A	General Chemistry I
+L	07	112A	General Chemistry II
+L	07	114	Topics in General Chemistry
+L	07	151	General Chemistry Laboratory I
+L	07	152	General Chemistry Laboratory II
+L	07	251	Organic Chemistry I
+L	07	252	Organic Chemistry II
+L	07	257	Organic Chemistry Laboratory I
+L	11	1011	Introduction to Microeconomics
+L	11	1021	Introduction to Macroeconomics
+L	11	413	Introduction to Econometrics
+L	12	301C	The American School
+L	12	408	Education and Psychology of Exceptional Children
+L	12	4301	Historical Social Content of the American School
+L	13	221	Fiction Writing
+L	13	312	Argumentation
+L	14	243	Topics in English and American Literature: From Fable to Film
+L	14	245	Topics in Literature: Banned Books: From Huckleberry Finn to Harry Potter
+L	15	233	Improvisation
+L	15	240	Acting I
+L	19	118A	Geology of National Parks
+L	19	171A	The Solar System
+L	24	1011	Introduction to Statistics
+L	24	131	Calculus I
+L	24	132	Calculus II
+L	24	217	Differential Equations
+L	24	220	Finite Mathematics: Number Theory, Combinatorics, and Graphs
+L	24	2200	Elementary Probability and Statistics
+L	24	233	Calculus III
+L	24	309	Matrix Algebra
+L	29	106E	Introduction to Dance as a Contemporary Art Form
+L	29	120	Yoga and Relaxation Techniques
+L	29	200	Tutorial
+L	34	108	Elementary French I
+L	34	109	Elementary French II
+L	34	400	Intensive Translation for Graduate Students I
+L	34	401	Intensive Translation for Graduate Students II
+L	41	112	Introduction to Problem-Based Learning in Biology
+L	41	258	The Biology of Health
+L	41	2651	MedPrep Program - Experience in Life Sciences
+L	41	2654	MedPrep II - Experience in the Life Sciences
+L	41	2960	Principles of Biology I
+L	41	2970	Principles of Biology II
+L	41	437	Laboratory on DNA Manipulation
+L	41	451	General Biochemistry
+L	53	304	Sex, Gender and Popular Culture
+L	56	460A	NEH Summer Institute Program Course: The New Negro Renaissance in America, 1919-1941
+L	82	335F	Introduction to Environmental Ethics
+A	46	101F	Drawing for Artists & Architects
+A	46	112	Intro to Design Processes II
+A	46	336B	Designing Sustainable Environments
+A	46	420D	The European City
+A	46	436	Mapping Soft Bodies/Constructing Complex Objects
+A	46	447A	STRUCTURES I
+A	46	448A	STRUCTURES II
+A	46	511	Architectural Design V
+A	46	512	ARCHITECTURAL DESIGN VI
+A	46	582	Independent Study
+A	46	611	ARCHITECTURAL DESIGN VII
+A	46	655A	Urban Design Summer Seminar: Contested Grounds: Tijuana / San Diego Border
+A	46	681	Independent Study
+A	46	714	Metropolitan Urban Design
+F	20	101F	Drawing for Artists and Architects
+F	20	111S	Painting
+F	20	118S	Digital Photography
+F	20	123S	Fashion Design
+F	20	146S	Letterpress & Book Arts: A Collaborative Affair
+F	20	3017	Drawing (and re-drawing) Conclusions (Florence, Italy)
+F	20	301S	Figure Drawing Short
+F	20	381S	Sam Fox School Summer Education Program: PrintX3
+F	20	3823	Fifteenth & Sixteenth Century Florence, Rome and Venice: Rethinking Renaissance Visual Culture
+F	20	450	Independent Study
+E	81	436S	Software Engineering Workshop
+E	81	400	Independent Study
+E	63	400	Independent Study
+E	81	200	Engineering and Scientific Computing
+E	62	400	Independent Study
+E	37	400	Independent Study
+E	37	463	Nanotechnology Concepts and Applications
+E	60	100A	Cooperative Education Experience
+E	60	200A	Cooperative Education Experience
+E	60	300A	Cooperative Education Experience
+E	60	310	Technical Writing
+E	60	400A	Cooperative Education Experience
+E	35	317	Engineering Mathematics
+E	35	400	Independent Study
+T	81	400	Independent Study
+W	74	654	Judicial Clerkship Externship
+W	74	695	Supervised Research
+W	74	798A	Lawyering Practice Externship (Koby)
+W	78	903A	Visiting Scholar Research
+W	79	501	Contracts (Greenhaw/Koby)
+W	79	538	Corporations (Burson)
+W	79	550A	Atrocity and Policy (Crane)
+W	79	550B	International Criminal & Procedure (Sadat/Olasolo)
+W	79	550Q	International Perspectives on Death Penalty (Benza)
+W	79	550W	Contemporary Developments in International Human
+W	79	551A	Comparative of Expressive Freedom in the E.U. and U.S. (Magarian/Nehmelman)
+W	79	551B	Law of Archeological Relics (Nance/Belder)
+W	79	560	Associate in Training Program (Mersmann)
+W	79	569	Securities Regulation (Lee)
+W	79	611	Antitrust (Ellis/Lee)
+W	79	647	Intellectual Property (Deal/Cho)
+W	79	702	Commercial (Korybut)
+W	79	729	Legal Research and Methods (Koby/Greenhaw)
+S	15	5039	SOCIAL WORK PRACTICE WITH ORGANIZATIONS AND COMMUNITIES
+S	20	3022	HEALTH PROMOTION AND BEHAVIOR: THEORIES, PROBLEMS, AND ISSUES
+S	20	4011	DIFFERENTIAL DIAGNOSIS
+S	20	5011	ECONOMICS OF SOCIAL WELFARE
+S	20	5014	SOCIAL JUSTICE: EXPLORING THE REALITY OF AMERICA'S PROMISE
+S	20	6043	SUMMER INSTITUTE: RURAL-URBAN DYNAMICS OF SOCIAL DEVELOPMENT IN CHINA AND INDIA
+S	30	5502	APPLIED BEHAVIOR THERAPY
+S	30	5503	COGNITIVE BEHAVIOR THERAPY
+S	30	6211	TREATMENT OF MENTAL DISORDERS
+S	30	7001	INTRODUCTION TO FAMILY THERAPY
+S	30	7326	SOCIAL WORK PRACTICE WITH YOUTH AND FAMILIES
+S	31	5185	TRAINING IN INTERGROUP DIALOGUE FACILITATION: SKILLS FOR MULTICULTURAL SOCIAL WORK PRACTICE
+S	40	5771	POLICY & SERVICES FOR CHILDREN & YOUTH
+S	50	5030	BUDGETING AND FISCAL MANAGEMENT
+S	50	5050	EVALUATION OF PROGRAMS AND SERVICES
+S	50	5066	MARKETING,RESOURCE DEVELOPMENT & COMMUNITY RELATIONS
+S	50	5067	DEVELOPING PROGRAMS FOR CHILDREN AND YOUTH
+S	55	5701	PRACTICUM-MPH PROGRAM
+S	60	5016	COMMUNITY DEVELOPMENT PRACTICE
+S	65	5082	FOUNDATIONS OF GEOGRAPHIC INFORMATION SYSTEMS (GIS) FOR THE APPLIED SOCIAL SCIENCES
+S	70	5006	FOUNDATION PRACTICUM, FIRST SEMESTER
+S	70	5012	FOUNDATION PRACTICUM, SECOND SEMESTER
+S	70	5013	FOUNDATION PRACTICUM, THIRD SEMESTER
+S	70	5014	CONCENTRATION PRACTICUM, FIRST SEMESTER
+S	70	5018	CONCENTRATION PRACTICUM, SECOND SEMESTER
+S	70	5022	CONCENTRATION PRACTICUM, THIRD SEMESTER
+S	70	5032	CONCENTRATION PRACTICUM, FOURTH SEMESTER
+S	70	5036	ELECTIVE PRACTICUM, FIRST SEMESTER
+S	70	5037	ELECTIVE PRACTICUM, SECOND SEMESTER
+S	70	5038	ELECTIVE PRACTICUM, THIRD SEMESTER
+S	70	5042	CONCENTRATION SOCIAL WORK PRACTICUM V
+S	70	5102	INTEGRATIVE FOUNDATION PRACTICUM SEMINAR
+S	80	4000	STATISTICS
+S	81	5006	INDEPENDENT STUDY I
+S	81	5013	INDEPENDENT STUDY II
+S	81	5047	INTERVENTION APPROACHES WITH HIV POSITIVE INDIVIDUALS AND FAMILIES
+S	81	5048	FUNDAMENTALS OF MOTIVATIONAL INTERVIEWING
+S	81	5067	UNDERSTANDING AND PRACTICE WITH AT-RISK AND INCARCERATED POPULATIONS AND THEIR FAMILIES
+S	81	5171	SKILLS FOR HEALING RACISM LAB II: FACILITATING DIVERSITY DIALOGUE AND INSTITUTIONAL CHANGE

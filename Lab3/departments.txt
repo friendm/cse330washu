@@ -1,0 +1,229 @@
+L	98	AFAS	African and African American Studies
+L	98	AMCS	American Culture Studies
+L	48	Anthro	Anthropology
+L	55	ASTAT	Applied Statistics
+L	49	Arab	Arabic
+L	52	ARC	Archaeology
+L	01	Art-Arch	Art History and Archaelogy
+L	06	ANECC	Asian and Near Eastern Cultures & Civilizations
+L	81	ANELL	Asian and Near Eastern Langs and Lits
+L	41	Biol	Biology and Biomedical Sciences
+L	56	CFH	Center for the Humanities
+L	07	Chem	Chemistry
+L	04	Chinese	Chinese
+L	08	Classics	Classics
+L	16	Comp Lit	Comparative Literature
+L	29	Dance	Dance
+L	15	Drama	Drama
+L	19	EPSc	Earth and Planetary Sciences
+L	03	East Asia	East Asian Studies
+L	11	Econ	Economics
+L	12	Educ	Education
+L	13	E Comp	English Composition
+L	14	E Lit	English Literature
+L	82	\N	Environmental Studies
+L	79	\N	European Studies
+L	53	\N	Film and Media Studies
+L	61	\N	Focus
+L	34	\N	French
+L	43	\N	General Studies
+L	21	\N	Germanic Languages and Literatures
+L	09	\N	Greek
+L	35	\N	Hebrew (Biblical)
+L	74	\N	Hebrew (Modern)
+L	73	\N	Hindi
+L	22	\N	History
+L	93	\N	Humanities
+L	65	\N	Institutional Social Analysis
+L	97	\N	International and Area Studies
+L	36	\N	Italian
+L	05	\N	Japanese
+L	75	\N	Jewish, Islamic and Near Eastern Studies
+L	51	\N	Korean
+L	10	\N	Latin
+L	45	\N	Latin American Studies
+L	84	\N	Legal Studies
+L	44	\N	Linguistics
+L	17	\N	Literature and History
+L	24	\N	Mathematics
+L	95	\N	Midieval abd Renaissance Studies
+L	96	\N	Mind, Brain, and Behavior
+L	63	\N	Movement Science
+L	27	\N	Music
+L	99	\N	Overseas Programs
+L	54	\N	Pathfinder Program
+L	47	\N	Persian
+L	30	\N	Philosophy
+L	64	\N	Philosophy-Neuroscience-Psychology
+L	28	\N	Physical Education
+L	31	\N	Physics
+L	50	\N	Political Economy
+L	32	\N	Political Science
+L	37	\N	Portuguese
+L	62	\N	PRAXIS
+L	33	\N	Psychology
+L	58	\N	Public Health
+L	23	\N	Religious Studies
+L	78	\N	Romance Languages and Literatures
+L	39	\N	Russian
+L	83	\N	Russian Studies
+L	38	\N	Spanish
+L	89	\N	Speech and Hearing
+L	18	\N	Urban Studies
+L	77	\N	Women, Gender, and Sexuality Studies
+B	50	\N	Accounting
+B	52	\N	Finance
+B	56	\N	Human Resource Management
+B	99	\N	International Studies
+B	53	\N	Management
+B	54	\N	Managerial Economics
+B	55	\N	Marketing
+B	57	\N	Operations and Manufacturing Management
+B	58	\N	Operations and Supply Chain Management
+B	66	\N	Organizational Behavior
+B	59	\N	Quantitative Business Analysis
+A	55	\N	Architectural Technology
+A	46	\N	Architecture
+A	48	\N	Landscape Architecture
+F	00	\N	Art
+F	10	\N	Art (Core and Major Studio Courses)
+F	20	\N	Elective Studio Courses
+E	62	BME	Biomedical Engineering
+E	63	\N	Chemical Engineering
+E	64	CE	Civil Engineering
+E	81	CSE	Computer Science and Engineering
+E	35	ESE	Electrical and Systems Engineering
+E	33	EEC	Energy, Environmental & Chemical Engineering
+E	80	\N	Engineering and Policy
+E	90	\N	Environmental Engineering
+E	60	EN	General Engineering
+E	37	MASE	Mechanical, Aerospace and Structural Engineering
+T	64	MCM	Construction Management
+T	55	MEM	Engineering Management
+T	81	MIM	Information Management
+T	23	\N	Intensive Chemical Engineering
+T	24	\N	Intensive Civil Engineering
+T	25	\N	Intensive Electrical Engineering
+T	27	\N	Intensive Mechanical Engineering
+T	28	\N	Intensive Systems Science and Math
+T	13	\N	Joint Chemical Engineering
+T	14	\N	Joint Civil Engineering
+T	15	\N	Joint Electrical Engineering
+T	16	\N	Joint Engineering Communications
+T	11	\N	Joint Introduction to Computing
+T	17	\N	Joint Mechanical Engineering
+T	82	\N	Telecommunications Management
+I	02	\N	Military Aerospace Science
+I	25	\N	Military Science
+W	75	\N	Law
+W	76	\N	Law
+W	77	\N	Law
+W	78	\N	Law
+W	79	\N	Law
+W	74	\N	Law School
+M	05	\N	Anatomy and Neurobiology
+M	10	\N	Anesthesiology
+M	89	\N	Audiology and Communication Sciences
+M	15	\N	Biochemistry and Molecular Biophysics
+M	75	\N	Cell Biology and Physiology
+M	17	\N	Clinical Investigation
+M	80	\N	Divisions, Institutes and Other Categories
+M	04	\N	Elective Program- WUMS I
+M	21	\N	Genetic Epidemiology
+M	20	\N	Genetics
+M	79	\N	Health Administration Program
+M	25	\N	Internal Medicine
+M	70	\N	Molecular Biology and Pharmacology
+M	30	\N	Molecular Microbiology
+M	40	\N	Neurological Surgery
+M	35	\N	Neurology
+M	45	\N	Obstetrics and Gynecology
+M	01	\N	Occupational Therapy Program
+M	50	\N	Ophthalmology and Visual Sciences
+M	55	\N	Otolaryngology
+M	60	\N	Pathology
+M	65	\N	Pediatrics
+M	02	PT-Grad	Physical Therapy Program-Grad
+M	22	PP-DPT	Physical Therapy Program
+M	08	\N	Psychiatric Epidemiology Program
+M	85	\N	Psychiatry
+M	90	\N	Radiology
+M	99	\N	Research
+M	95	\N	Surgery
+S	60	SWCD	Community Development
+S	63	SWCD	Community Development
+S	65	SWCD	Community Development
+S	10	SWCR	Core
+S	15	SWCR	Core
+S	30	SWDP	Direct Practice
+S	31	SWDP	Direct Practice
+S	32	SWDP	Direct Practice
+S	35	SWDP	Direct Practice
+S	90	SWDT	Doctoral
+S	85	SWFT	Family Therapy
+S	20	SWHS	History and Professional Theme
+S	81	SWIP	Independent Study
+S	82	SWIP	Independent Study
+S	70	SWPR	Practicum
+S	71	SWPR	Practicum
+S	55	MPH	Public Health
+S	50	SWSA	Social Administration
+S	40	SWSP	Social Policy
+S	48	SWSP	Social Policy
+S	49	SCWK	Social Work
+S	80	SCWK	Social Work
+U	84	AFAS	African and African American Studies
+U	89	AMCS	American Culture Studies
+U	69	Anthro	Anthropology
+U	35	Arab	Arabic
+U	79	Art	Art
+U	10	ArtArch	Art and Archaeology
+U	29	Bio	Biology
+U	44	Bus	Business
+U	05	Chem	Chemistry
+U	38	\N	Chinese
+U	02	Cla	Classics
+U	80	CRM	Clinical Research Management
+U	48	Comm	Communications and Journalism
+U	32	CompLit	Comparative Literature
+U	82	CIM	Computers and Information Management
+U	31	\N	Dance
+U	21	\N	Drama
+U	13	EPSc	Earth and Planetary Sciences
+U	78	EAsia	East Asian Studies
+U	07	Econ	Economics
+U	08	Educ	Education
+U	65	ELit	English and American Literature
+U	11	EComp	English Composition
+U	15	ELP	English Language Programs
+U	18	FMS	Film and Media Studies
+U	12	Fr	French
+U	03	GS	General Studies
+U	90	GIS	Geographic Information Systems
+U	14	German	Germanic Languages and Literatures
+U	86	HCARE	Health Care
+U	88	HCS	Health Care Services
+U	37	Hebr	Hebrew
+U	16	Hist	History
+U	87	HRM	Human Resources Management
+U	85	IA	International Affairs
+U	43	IS	International Studies
+U	40	Ital	Italian
+U	36	ANELL	Japanese
+U	94	JINE	Jewish, Islamic, and Near Eastern Studies
+U	91	Ling	Linguistics
+U	20	Math	Mathematics
+U	98	\N	MLA Seminars
+U	24	Mus	Music
+U	76	NPM	Nonprofit Management
+U	22	Phys	Physics
+U	25	PolSci	Political Science
+U	26	Port	Portuguese
+U	09	Psych	Psychology
+U	66	RelSt	Religious Studies
+U	39	Russ	Russian
+U	93	Scan	Scandinavian
+U	74	Sci	Science
+U	27	Span	Spanish
+U	30	Spch	Speech
+U	92	WGSS	Women, Gender, and Sexuality Studies

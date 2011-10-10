@@ -1,0 +1,4 @@
+257	Jack	Johnson	jjmuzak@brushfirerecords.com
+915	Tim	Armstrong	tArmz@rancid.com
+329	Elton	John	eltonJohnny23@rocketman.net
+632	Bob	Dylan	bobbieD@4thstreet.org
