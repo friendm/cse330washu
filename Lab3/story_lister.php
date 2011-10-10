@@ -29,17 +29,17 @@ echo $message;
 }
 
 while($row=mysql_fetch_array($result)){
-
-$commentquery= "select comment_name,comment from comments where story_identifier=2";
-
+//var1 is the number of the story, so we associate comments with the correct story
+$var1=$row['story_identifier'];
+$commentquery= "select * from comments where story_identifier=$var1";
 $commentresult=mysql_query($commentquery,$link);
+//prints out story name
+echo $row['story_type'],":__",$row['story_name'],":",$row['story_content'],"__";
 
-$row2=mysql_fetch_array($commentresult);
-
-
-echo ,$row['story_type'],":__",$row['story_name'],":",$row['story_content'], "__",$row2['comment_name'],":",$row2['comment'],"                " ;
-
-
+//prints out comments for story
+while($row2=mysql_fetch_array($commentresult)){
+echo $row2['comment_name'],":",$row2['comment'];
+}
 
 }
 
