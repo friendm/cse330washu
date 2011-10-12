@@ -4,7 +4,7 @@
 $username="wustl_inst";
 $password="wustl_pass";
 $database="Lab3";
-$identifier=$_GET['value1'];
+$identifier=mysql_real_escape_string($_GET['value1']);
 session_start();
 
 

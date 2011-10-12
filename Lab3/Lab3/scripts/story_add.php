@@ -31,7 +31,8 @@ $result=mysql_query($sqlquery,$link);
 
 if(!$result){
 $message="oh shit query is malformed!";
-echo $message,":",$sqlquery;
+echo "your password was incorrect please try  <a href=\"../newstory.html\">again.</a>";
+
 }
 else echo "$temp_user your story has been submitted. Go <a href=\"../index.php\">home.</a>";
 mysql_close($link);

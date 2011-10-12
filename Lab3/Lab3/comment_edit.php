@@ -1,7 +1,7 @@
 <?php
-$temp_commName = $_GET['val1'];
-$temp_comment = $_GET['val2'];
-$identS = $_GET['val3'];
+$temp_commName =mysql_real_escape_string($_GET['val1']);
+$temp_comment = mysql_real_escape_string($_GET['val2']);
+$identS = mysql_real_escape_string($_GET['val3']);
 ?>
 
 <html>

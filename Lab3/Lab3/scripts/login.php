@@ -32,6 +32,7 @@ while($row=mysql_fetch_array($result)){
 if($protected == crypt($row['username'],$row['password'])){
 echo "authentication complete! ";
 $_SESSION['userid']=$row['username'];
+$_SESSION['password']=$row['password'];
 $_SESSION['verified']=true;
 if(strcmp($row['user_type'],'Admin')==0){
 $_SESSION['Admin']=true;

@@ -1,5 +1,5 @@
 <?php
-$passing = $_GET['var1'];
+$passing = mysql_real_escape_string($_GET['var1']);
 ?>
 
 <html>

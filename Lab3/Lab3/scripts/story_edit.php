@@ -21,12 +21,12 @@ echo "db not selected! ";
 }
 
 
-
-
-$story_name_field= $_POST['title'];
-$story_content_field=$_POST['content'];
+$up=$_SESSION['password'];
+$fp=$_POST['password'];
+$story_name_field= mysql_real_escape_string($_POST['title']);
+$story_content_field=mysql_real_escape_string($_POST['content']);
 $story_type=$_POST['type'];
-
+if(strcmp($up,$fp)==0){
 $sqlquery="update stories set story_type='$story_type', story_name='$story_name_field',story_content='$story_content_field' where story_identifier=$story_identifier";
 $result= mysql_query($sqlquery,$link);
 
@@ -37,6 +37,7 @@ echo $sqlquery;
 }
 
 echo "You are a story-editing machine. Go <a href=\"../index.php\">home.</a>";
-
+}
+else echo "Woah bro try again <a href=\"../index.php\">!.</a>";
 mysql_close($link);
 ?>

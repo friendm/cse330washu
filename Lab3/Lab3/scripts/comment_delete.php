@@ -3,9 +3,9 @@
 $username="wustl_inst";
 $password="wustl_pass";
 $database="Lab3";
-$comment_name=$_GET['val1'];
-$comment=$_GET['val2'];
-$iden=$_GET['val3'];
+$comment_name=mysql_real_escape_string( $_GET['val1']);
+$comment=mysql_real_escape_string( $_GET['val2']);
+$iden=mysql_real_escape_string($_GET['val3']);
 session_start();
 
 

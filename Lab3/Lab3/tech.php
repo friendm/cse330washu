@@ -38,7 +38,7 @@ echo "Welcome, $temp_user";
 
 <!-- Storybox Element -->
 <?php
-include 'scripts/story_lister.php';
+include 'scripts/story_lister_tech.php';
 echo "<strong>Derp News. Fair. Balanced. Derp.</strong>";
 /*
 while($row=mysql_fetch_array($result)){
