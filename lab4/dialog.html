@@ -1,0 +1,70 @@
+<html>
+<head>
+  <style>
+    #mydialog { display:none }
+#d2{display:none}
+#google{display:none}
+#yahoo {display:none}
+#googclose {display:none}
+#yahooclose {display:none}
+  </style>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/start/jquery-ui.css"
+   type="text/css" rel="Stylesheet" /> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    function showdialog()
+    {
+      $("#mydialog").dialog();
+    }
+function two()
+{
+$("#d2").dialog();
+}
+
+function gclose()
+{
+$("#googclose").dialog();
+}
+
+function yclose()
+{
+$("#yahooclose").dialog();
+}
+
+function showgoog(){
+$("#google").css('display','block');
+}
+function showyahoo(){
+$("#yahoo").css('display','block');
+}
+
+function hideyahoo(){
+$("#yahoo").css('display','none');
+}
+
+function hidegoog(){
+$("#google").css('display','none');
+}
+  </script>
+</head>
+<body>
+<a href="#" onclick="showdialog();">Google</a>
+<a href="#" onclick="two();">Yahoo</a>
+
+<div id="mydialog"  title="Howdy"  >Look at me!
+<input type="button" value="google!" onclick="showgoog();"> </div>
+
+<div id="googclose">
+<input type="button" value="close" onclick="hidegoog();"> </div>
+
+<div id="yahooclose">
+<input type="button" value ="close" onclick="hideyahoo();"> </div>
+
+<a href="#" onclick="gclose();"><img id="google" src="google.jpg" alt="google" /></a>
+<a href="#" onclick="yclose();"><img id="yahoo" src="yahoo.jpg" alt="yahoo" /></a>
+
+<div id="d2" title="Howdy">Don't look at me!
+<input type="button" value="yahoo" onclick="showyahoo();"></div>
+</body>
+</html>
