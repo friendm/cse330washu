@@ -202,10 +202,11 @@ $("#email").live("click", function(){
         var yours,other,content;
         yours=document.getElementById("yourEmail").value;
         other=document.getElementById("otherEmail").value;
-	content=document.getElementById("infoBox").value;
+	//content=document.getElementById("infoBox").value;
+	content=$("#infoBox").text();
         var req="usermail="+yours+"&reciever="+other+"&content="+content;
 
-        xmlHttp.open("POST","emailfunction.php",true);
+        xmlHttp.open("POST","cal_email.php",true);
         
         xmlHttp.onreadystatechange=function(){
                 if (xmlHttp.readyState == 4){
@@ -417,7 +418,7 @@ for ($i=0; $i<60; $i++){
 }
 echo "</select>";
 
-echo "Minute:<select id=\"timeZoneSelect\">";
+echo "Zone:<select id=\"timeZoneSelect\">";
         echo "<option value=\"est\">EST</option>
 	<option value=\"cst\">CST</option>
 	<option value=\"rmt\">RMT</option>

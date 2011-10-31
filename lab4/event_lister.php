@@ -57,7 +57,7 @@ $temp_minutes="09";
 }
 
 //print out event titles and times
-echo "<div class=\"event\" id=\"event$i\">$temp_time:$temp_minutes:$temp_timezone:$temp_event</div><br />";
+echo "<div class=\"event\" id=\"event$i\">$temp_time:$temp_minutes:$temp_timezone:$temp_event.</div><br />";
 $i++;
 }
 
