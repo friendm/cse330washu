@@ -1,0 +1,163 @@
+
+
+.box {
+	border: black solid 1px;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.weekDaysHeader{
+	border-right: black solid 1px;
+	width: 100px;
+	float: left;
+}
+
+#loginBox{
+	height: auto;
+	width: 200px;
+	border: black solid 1px;
+	position: absolute;
+	top:0px;
+	left:1050px;	
+}
+#login{
+
+}
+#register {
+
+}
+#logout{
+
+}
+
+#inputLogin, #inputRegister{
+	width: 50px;
+	height: 20px;
+	background-color:blue;
+}
+
+#infoBox {
+	position: absolute;
+	top:90px;
+	left: 750px;
+	width: 300px;
+	height: 494px;
+	padding-top: 60px;
+	border: black solid 1px;
+	border-top:none;
+}
+
+
+#infoBoxHeader {
+	position: absolute;
+	top:0px;
+	left: 750px;
+	width: 300px;
+	height: 35px;
+	border: black solid 1px;
+}
+
+#infoBoxNewEvent {
+	position: absolute;
+        top:35px;
+        left: 750px;
+        width: 300px;
+        height: 85px;
+        border: black solid 1px;
+}
+
+#infoBoxHeader p {
+	text-align: center;
+}
+
+#monthHeader {
+	width: 712px;
+	height:33px;
+	position: absolute;
+	top:0px;
+	border: black solid 1px;
+}
+#weekdaysHeader {
+	width: 712px;
+	height:33px;
+	position: absolute;
+	top:35px;
+	border: black solid 1px;
+}
+
+#monthBox{
+	width: 200px;
+	height: 33px;
+	position: absolute;
+	top: 0px;
+	left: 260px;
+}
+#monthbox p {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+#back p {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+#forward p {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+#back {
+	width: 200px;
+	height: 33px;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+}
+
+#forward {
+	width: 200px;
+	height: 33px;
+	position: absolute;
+	top: 0px;
+	left: 512px;
+}
+
+#week1 {
+	position: absolute;
+	top:70px;
+	height: 102px;
+	width: 750px;
+}
+#week2 {
+	position: absolute;
+	top:175px;
+	height: 102px;
+	width: 750px;
+}
+#week3 {
+	position: absolute;
+	top:280px;
+	height: 102px;
+	width: 750px;
+}
+#week4 {
+	position: absolute;
+	top:385px;
+	height: 102px;
+	width: 750px;
+}
+#week5 {
+	position: absolute;
+	top:490px;
+	height: 102px;
+	width: 750px;
+}
+#week6 {
+	position: absolute;
+	top:595px;
+	height: 102px;
+	width: 750px;
+}

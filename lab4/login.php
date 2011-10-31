@@ -14,12 +14,12 @@ echo "fail to connect";
 }
 
 
-$dbselected=mysql_select_db("Lab3",$link);
+$dbselected=mysql_select_db("calender",$link);
 if(!$dbselected){
 echo "db not selected! ";
 }
 
-$sqlquery= "select username,password,user_type from users";
+$sqlquery= "select username,password from users";
 
 $result=mysql_query($sqlquery,$link);
 
@@ -34,11 +34,8 @@ echo "authentication complete! ";
 $_SESSION['userid']=$row['username'];
 $_SESSION['password']=$row['password'];
 $_SESSION['verified']=true;
-if(strcmp($row['user_type'],'Admin')==0){
-$_SESSION['Admin']=true;
-}
+
 echo $_SESSION['userid'],"  you are logged in!";
-echo "<br><a href=\"../index.php\">Go to your calender!</a>";
 
 }
 }
@@ -46,7 +43,6 @@ echo "<br><a href=\"../index.php\">Go to your calender!</a>";
 if(!$_SESSION['verified']){
 echo "sorry your login didn't work";
 
-echo "<br><a href=\"../index.php\">Go to news.</a>";
 }
 
 mysql_close($link);

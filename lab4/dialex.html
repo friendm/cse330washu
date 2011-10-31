@@ -1,0 +1,24 @@
+<html>
+<head>
+  <style>
+    #mydialog { display:none }
+  </style>
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/start/jquery-ui.css"
+   type="text/css" rel="Stylesheet" /> 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    function showdialog()
+    {
+      $("#mydialog").dialog();
+    }
+  </script>
+</head>
+<body>
+  <input type="button" value="Show Dialog" onclick=showdialog() />
+  <form id="mydialog">
+Event Name:<input type="text"/>
+Event Time:<select> <option value="1">1</option> <option value="24">24</option>
+</form>
+</body>
+</html>
