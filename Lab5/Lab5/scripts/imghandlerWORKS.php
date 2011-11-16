@@ -8,7 +8,6 @@
 
  session_start();
 $target_path = $_SESSION['userid'].'/';
-$save_path = $target_path;
 $target_path = $target_path.basename($_FILES['uploadedfile']['name']);
 
 if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
@@ -25,8 +24,6 @@ echo $target_path;
 echo "<br>";
 echo $_SESSION['userid'];
 
-$name="badge.png";
-rename($target_path,$save_path.$name);
 
 ?>
 

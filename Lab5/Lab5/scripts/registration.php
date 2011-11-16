@@ -53,7 +53,7 @@ echo "Congrats ",$formuser," you are registered.";
 
 
 mysql_close($link);
-$folder=$formuser;
+$folder="scripts/$formuser";
 $path="$folder";
 mkdir($path);
 $path2="$folder/cards";
