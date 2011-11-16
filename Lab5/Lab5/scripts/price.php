@@ -2,16 +2,16 @@
 
 $username="wustl_inst";
 $password="wustl_pass";
-$database="zipcode";
+
 
 $num_cards= $_POST['cards'];
 $card_type= $_POST['type'];
 $r_zip=$_POST['zip'];
 
 //set location of the card vendor
-$sender=02493;
-$lat=0.0;
-$long=0.0;
+$sender=66203;
+$lat=39.015629;
+$long=-94.693187;
 
 //users lat and longitude retried from sql database stored as global variables
 $lat1;
@@ -39,10 +39,10 @@ $message="oh shit query is malformed!";
 echo $message;
 }
 //sets values of users
-while($row=mysql_fetch_array($result)){
+$row=mysql_fetch_array($result))
 $lat1=$row['latitude'];
 $long1=$row['longitude'];
-}
+
 
 //calculates the distance between zipcodes using their coordinates
 //to figure out shipping costs

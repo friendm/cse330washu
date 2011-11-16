@@ -2,7 +2,7 @@
 
 $username="wustl_inst";
 $password="wustl_pass";
-$database="Lab5";
+$database="lab5";
 $formuser= $_POST['reg_user'];
 $formpassword= $_POST['reg_pass1'];
 $formpassword2= $_POST['reg_pass2'];
@@ -14,8 +14,7 @@ if(!$link){
 echo "fail to connect";
 }
 
-
-$dbselected=mysql_select_db("users",$link);
+$dbselected=mysql_select_db("lab5",$link);
 if(!$dbselected){
 echo "db not selected! ";
 }

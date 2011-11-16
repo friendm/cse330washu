@@ -2,7 +2,7 @@
 
 $username="wustl_inst";
 $password="wustl_pass";
-$database="Lab5";
+$database="lab5";
 $username1=mysql_real_escape_string($_POST['user']);
 $password1=mysql_real_escape_string($_POST['pass']);
 $protected=crypt($username1,$password1);
@@ -14,7 +14,7 @@ echo "fail to connect";
 }
 
 //selects database
-$dbselected=mysql_select_db("users",$link);
+$dbselected=mysql_select_db("lab5",$link);
 if(!$dbselected){
 echo "db not selected! ";
 }

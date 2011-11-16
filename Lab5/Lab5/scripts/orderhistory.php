@@ -4,12 +4,10 @@
 
 $username="wustl_inst";
 $password="wustl_pass";
-$database="Lab5";
-$formuser= $_POST['reg_user'];
-$formpassword= $_POST['reg_pass1'];
-$formpassword2= $_POST['reg_pass2'];
-session_start();
 
+
+session_start();
+$formuser=$_SESSION['userid'];
 
 $link=mysql_connect('localhost',$username,$password);
 if(!$link){
@@ -17,7 +15,7 @@ echo "fail to connect";
 }
 
 
-$dbselected=mysql_select_db("users",$link);
+$dbselected=mysql_select_db("lab5",$link);
 if(!$dbselected){
 echo "db not selected! ";
 }
@@ -33,7 +31,7 @@ echo $message;
 
 while($row=mysql_fetch_array($result)){
 $var1=$row['orderhist'];
-echo 
+echo $var1; 
 }
 ?>
 
