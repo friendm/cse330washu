@@ -29,10 +29,16 @@ $message="oh shit query is malformed!";
 echo $message;
 }
 
-while($row=mysql_fetch_array($result)){
+$row=mysql_fetch_array($result);
 $var1=$row['orderhist'];
-echo $var1; 
+$array=explode(":",$var1);
+$num=count($array);
+for($i=0;$i<$num;$i=$i+2){
+$z=$i+1;
+echo "Date Ordered: $array[$i];Number of cards: $array[$z]";
+ 
 }
+mysql_close($link);
 ?>
 
 

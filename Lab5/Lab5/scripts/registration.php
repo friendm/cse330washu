@@ -53,11 +53,10 @@ echo "Congrats ",$formuser," you are registered.";
 
 
 mysql_close($link);
-$folder="scripts/$formuser";
-$path="$folder";
-mkdir($path);
-$path2="$folder/cards";
-mkdir($path2);
+
+$folder="$formuser";
+mkdir("$folder");
+
 
 mysql_close($link);
 

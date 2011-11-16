@@ -5,34 +5,52 @@
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
- 
+
  session_start();
-if($_SESSION['verify']){ 
-$hashed=hash("crc32",$_SESSION['username']); 
-$target_path = 'images/'.$hashed.'/';
-$filename=($_FILES['uploadedfile']['name']);
-//finds the file extension
-function findexts($filename) { $filename = strtolower($filename) ; $exts = split("[/\\.]", $filename) ; $n = count($exts)-1; $exts = $exts[$n]; return $exts; }  
-//finds extension, names the file csvfile so it is easy to find
-$ext=findexts($filename);
-$name="csvfile";
-$target_path="/images/$hashed";
-$target_path=$target_path.$name.$ext;
-
-
+$target_path = $_SESSION['userid'].'/';
+$save_path = $target_path;
+$target_path = $target_path.basename($_FILES['uploadedfile']['name']);
 
 if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
     echo $_SESSION['username']," the File "  .basename( $_FILES['uploadedfile']['name']), " is uploaded";
 } else{
-	 
+
    echo "There was an error uploading the file, you shall not pass";
 }
- 
+
+
+//header('Location:index.html');
+echo "<br>";
+echo $target_path;
+echo "<br>";
+echo $_SESSION['userid'];
+
+$name="csv.csv";
+rename($target_path,$save_path.$name);
+
+
+$username="wustl_inst";
+$password="wustl_pass";
+$database="lab5";
+
+
+$link=mysql_connect('localhost',$username,$password);
+if(!$link){
+echo "fail to connect";
 }
-else 
-header('Location:index.html'); 
- 
- 
- 
- 
+
+$dbselected=mysql_select_db("lab5",$link);
+if(!$dbselected){
+echo "db not selected! ";
+}
+
+$sqlquery= "load data local infile '/home/MJF/.html/Lab5/scripts/$_SESSION['userid']' into table csvfile fields terminated by ',' lines terminated by '\r\n'";
+
+$result=mysql_query($sqlquery,$link);
+
+mysql_close($link);
+
+
+
 ?>
+

@@ -6,9 +6,10 @@
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
 
- session_start();
-$target_path = $_SESSION['userid'].'/';
-$save_path = $target_path;
+session_start();
+
+$usr =$_SESSION['userid'];
+$target_path = $usr.'/';
 $target_path = $target_path.basename($_FILES['uploadedfile']['name']);
 
 if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
@@ -18,12 +19,10 @@ if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) {
    echo "There was an error uploading the file, you shall not pass";
 }
 
+echo $target_path;
 
 //header('Location:index.html');
-echo "<br>";
-echo $target_path;
-echo "<br>";
-echo $_SESSION['userid'];
+
 
 $name="badge.png";
 rename($target_path,$save_path.$name);

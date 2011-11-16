@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <title>Card Designer</title>
@@ -60,7 +59,7 @@
 	margin:0px;
 	width:90px;
 	height:100px;
-	background-image:url(scripts/<?php session_start(); $name = $_SESSION['userid']; echo $name; ?>/badge.png);
+	background-image:url(<?php session_start(); $name = $_SESSION['userid']; echo"scripts/$name"; ?>/badge.png);
 	background-size: 100% 100%;
 	/*background-repeat:no-repeat;*/
 }
@@ -98,9 +97,6 @@ Note: must be listed before the jquery-ui library -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script><!-- jquery-UI 
 hosted on Google's Ajax CDN-->
 <script type="text/javascript" src="scripts/dom-drag.js"></script>
-
-<script type="text/javascript" src="scripts/canvas2image.js"></script>
-<script type="text/javascript" src="scripts/base64.js"></script>
 </head>
 <body>
 
@@ -153,21 +149,15 @@ Choose a file to upload: <input name="uploadedfile" type="file" /><br>
 </html>
 </div>
 <hr></hr>
-<div>Single Order:<br />Number of Cards:<input id="singleOrderTextbox" type="text" /><div id="singleOrderButton" class="divButton">Order</div></div>
+<div>Single Order:<br />Number of Cards:<input id="singleOrderTextbox" type="text" /><div id="singleOrderButton" class="divButton">Update</div></div>
 <hr></hr>
-<div>Bulk Order:<br />Number of Cards Per Person:<input id="bulkOrderTextbox" type="text" />
-<form enctype="multipart/form-data" action="scripts/csvhandler.php" method="POST">
-<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
-Choose a file to upload: <input name="uploadedfile" type="file" /><br>
- <input type="submit" value="Upload CSV" />
-</form>
-</div>
+<div>Bulk Order:<br />Upload CSV:<div id="uploadCSV" class="divButton">Upload</div><br />Number of Cards Per Person:<input id="bulkOrderTextbox" type="text" /><div id="bulkOrderButton" class="divButton">Update</div></div>
 <hr></hr>
 <div>Price Estimator:<br />
 Zip Code<input id="zipcodeBox" type="text" /><br/> 
 Cost:<div id="cost" style="float:right">&#36;0</div></div>
 <hr></hr>
-<!-- <div id="order" class="divButton">Order</div> -->
+<div id="order" class="divButton">Order</div>
 <div id="makeCard" class="divButton">Make Card</div>
 </div> <!-- End of orderControlBox -->
 
@@ -217,7 +207,6 @@ Address:<br /><input id="prefAddress" rows="3" cols="20" value="0000 Anywhere St
 //needed for ajax queries
 var xmlHttp;
 xmlHttp=new XMLHttpRequest();
-
 
 //remember the badge so we can refer to it in init
 var badgeImage = document.getElementById("badge");
@@ -324,72 +313,72 @@ function updateCard(){
 	$('#address').text($('#prefAddress').val());
 	
 	//redraw the image
-	$('#badge').css('background-image', 'url(scripts/<?php session_start(); $name = $_SESSION['userid']; echo $name; ?>/badge.png)');
+	$('#badge').css('background-image', 'url(<?php echo"scripts/$name"; ?>/badge.png)');
 	
 	//updates all coordinates & size contraints
 	//image size and bounds
- IMAGE_WIDTH = $('#badge').width();
- IMAGE_HEIGHT = $('#badge').height();
- IMAGE_BOUNDS_WIDTH = CARD_WIDTH-IMAGE_WIDTH;
- IMAGE_BOUNDS_HEIGHT = CARD_HEIGHT-IMAGE_HEIGHT;
- imagePositionX = badgeImage.offsetLeft;
- imagePositionY = badgeImage.offsetTop;
+var IMAGE_WIDTH = $('#badge').width();
+var IMAGE_HEIGHT = $('#badge').height();
+var IMAGE_BOUNDS_WIDTH = CARD_WIDTH-IMAGE_WIDTH;
+var IMAGE_BOUNDS_HEIGHT = CARD_HEIGHT-IMAGE_HEIGHT;
+var imagePositionX = badgeImage.offsetLeft;
+var imagePositionY = badgeImage.offsetTop;
 
 //Office size and bounds
- OFFICE_WIDTH = $('#office').width();
- OFFICE_HEIGHT = $('#office').height();
- OFFICE_BOUNDS_WIDTH = CARD_WIDTH-OFFICE_WIDTH;
- OFFICE_BOUNDS_HEIGHT = CARD_HEIGHT-OFFICE_HEIGHT;
- officePositionX = officeImage.offsetLeft;
- officePositionY = officeImage.offsetTop;
+var OFFICE_WIDTH = $('#office').width();
+var OFFICE_HEIGHT = $('#office').height();
+var OFFICE_BOUNDS_WIDTH = CARD_WIDTH-OFFICE_WIDTH;
+var OFFICE_BOUNDS_HEIGHT = CARD_HEIGHT-OFFICE_HEIGHT;
+var officePositionX = officeImage.offsetLeft;
+var officePositionY = officeImage.offsetTop;
 
 //Department size and bounds
- DEPT_WIDTH = $('#department').width();
- DEPT_HEIGHT = $('#department').height();
- DEPT_BOUNDS_WIDTH = CARD_WIDTH-DEPT_WIDTH;
- DEPT_BOUNDS_HEIGHT = CARD_HEIGHT-DEPT_HEIGHT;
- deptPositionX = deptImage.offsetLeft;
- deptPositionY = deptImage.offsetTop;
+var DEPT_WIDTH = $('#department').width();
+var DEPT_HEIGHT = $('#department').height();
+var DEPT_BOUNDS_WIDTH = CARD_WIDTH-DEPT_WIDTH;
+var DEPT_BOUNDS_HEIGHT = CARD_HEIGHT-DEPT_HEIGHT;
+var deptPositionX = deptImage.offsetLeft;
+var deptPositionY = deptImage.offsetTop;
 
 //Name size and bounds
- NAME_WIDTH = $('#name').width();
- NAME_HEIGHT = $('#name').height();
- NAME_BOUNDS_WIDTH = CARD_WIDTH-NAME_WIDTH;
- NAME_BOUNDS_HEIGHT = CARD_HEIGHT-NAME_HEIGHT;
- namePositionX = nameImage.offsetLeft;
- namePositionY = nameImage.offsetTop;
+var NAME_WIDTH = $('#name').width();
+var NAME_HEIGHT = $('#name').height();
+var NAME_BOUNDS_WIDTH = CARD_WIDTH-NAME_WIDTH;
+var NAME_BOUNDS_HEIGHT = CARD_HEIGHT-NAME_HEIGHT;
+var namePositionX = nameImage.offsetLeft;
+var namePositionY = nameImage.offsetTop;
 
 //Name title and bounds
- TITLE_WIDTH = $('#title').width();
- TITLE_HEIGHT = $('#title').height();
- TITLE_BOUNDS_WIDTH = CARD_WIDTH-TITLE_WIDTH;
- TITLE_BOUNDS_HEIGHT = CARD_HEIGHT-TITLE_HEIGHT;
- titlePositionX = titleImage.offsetLeft;
- titlePositionY = titleImage.offsetTop;
+var TITLE_WIDTH = $('#title').width();
+var TITLE_HEIGHT = $('#title').height();
+var TITLE_BOUNDS_WIDTH = CARD_WIDTH-TITLE_WIDTH;
+var TITLE_BOUNDS_HEIGHT = CARD_HEIGHT-TITLE_HEIGHT;
+var titlePositionX = titleImage.offsetLeft;
+var titlePositionY = titleImage.offsetTop;
 
 //Name phone and bounds
- PHONE_WIDTH = $('#phone').width();
- PHONE_HEIGHT = $('#phone').height();
- PHONE_BOUNDS_WIDTH = CARD_WIDTH-PHONE_WIDTH;
- PHONE_BOUNDS_HEIGHT = CARD_HEIGHT-PHONE_HEIGHT;
- phonePositionX = phoneImage.offsetLeft;
- phonePositionY = phoneImage.offsetTop;
+var PHONE_WIDTH = $('#phone').width();
+var PHONE_HEIGHT = $('#phone').height();
+var PHONE_BOUNDS_WIDTH = CARD_WIDTH-PHONE_WIDTH;
+var PHONE_BOUNDS_HEIGHT = CARD_HEIGHT-PHONE_HEIGHT;
+var phonePositionX = phoneImage.offsetLeft;
+var phonePositionY = phoneImage.offsetTop;
 
 //Name email and bounds
- EMAIL_WIDTH = $('#email').width();
- EMAIL_HEIGHT = $('#email').height();
- EMAIL_BOUNDS_WIDTH = CARD_WIDTH-EMAIL_WIDTH;
- EMAIL_BOUNDS_HEIGHT = CARD_HEIGHT-EMAIL_HEIGHT;
- emailPositionX = emailImage.offsetLeft;
- emailPositionY = emailImage.offsetTop;
+var EMAIL_WIDTH = $('#email').width();
+var EMAIL_HEIGHT = $('#email').height();
+var EMAIL_BOUNDS_WIDTH = CARD_WIDTH-EMAIL_WIDTH;
+var EMAIL_BOUNDS_HEIGHT = CARD_HEIGHT-EMAIL_HEIGHT;
+var emailPositionX = emailImage.offsetLeft;
+var emailPositionY = emailImage.offsetTop;
 
 //Name address and bounds
- ADDRESS_WIDTH = $('#address').width();
- ADDRESS_HEIGHT = $('#address').height();
- ADDRESS_BOUNDS_WIDTH = CARD_WIDTH-ADDRESS_WIDTH;
- ADDRESS_BOUNDS_HEIGHT = CARD_HEIGHT-ADDRESS_HEIGHT;
- addressPositionX = addressImage.offsetLeft;
- addressPositionY = addressImage.offsetTop;
+var ADDRESS_WIDTH = $('#address').width();
+var ADDRESS_HEIGHT = $('#address').height();
+var ADDRESS_BOUNDS_WIDTH = CARD_WIDTH-ADDRESS_WIDTH;
+var ADDRESS_BOUNDS_HEIGHT = CARD_HEIGHT-ADDRESS_HEIGHT;
+var addressPositionX = addressImage.offsetLeft;
+var addressPositionY = addressImage.offsetTop;
 
 
 
@@ -500,58 +489,48 @@ var height = 175;
 var canvas = $("#myCanvas");
 var context = canvas.get(0).getContext("2d");
 
-context.fillStyle = '#FFFFFF';
-context.fillRect(0,0,306,175);
-context.fillStyle = '#000000';
 context.strokeRect(0,0,306,175);
-
-
 var text;
 //add things to canvas
 var textName = $('#name').text();
 context.font = "18px Georgia";
-context.fillText(textName, namePositionX, namePositionY+10);
+context.fillText(textName, namePositionX, namePositionY);
 
 
 text = $('#office').text();
 context.font = "14px Georgia";
-context.fillText(text, officePositionX, officePositionY+10);
+context.fillText(text, officePositionX, officePositionY);
 
 text = $('#title').text();
 context.font = "10px Georgia";
-context.fillText(text, titlePositionX, titlePositionY+10);
+context.fillText(text, titlePositionX, titlePositionY);
 
 text = $('#department').text();
 context.font = "10px Georgia";
-context.fillText(text, deptPositionX, deptPositionY+10);
+context.fillText(text, deptPositionX, deptPositionY);
 
 text = $('#phone').text();
 context.font = "10px Georgia";
-context.fillText(text, phonePositionX, phonePositionY+10);
+context.fillText(text, phonePositionX, phonePositionY);
 
 text = $('#email').text();
 context.font = "10px Georgia";
-context.fillText(text, emailPositionX, emailPositionY+10);
+context.fillText(text, emailPositionX, emailPositionY);
 
 text = $('#address').text();
 context.font = "10px Georgia";
-context.fillText(text, addressPositionX, addressPositionY+10);
+context.fillText(text, addressPositionX, addressPositionY);
 
-
+/*
 //add image to canvas
 var imgBadge = new Image();
-imgBadge.src = "scripts/<?php  echo $name; ?>/badge.png";
-context.drawImage(imgBadge,imagePositionX,imagePositionY,90,100);
-
-var oCanvas = document.getElementById("myCanvas");
-Canvas2Image.saveAsPNG(oCanvas);
-
-//everything is now finished, so save the canvas as an image
-//var dataURL = canvas.toDataURL();
-//document.getElementById("canvasImg").src = dataURL;
+imgBadge.src = "<?php echo"scripts/$name"; ?>/badge.png";
+context.drawImage(imgBadge,badgePositionX,badgePositionY);
+*/
 
 
-//$('#last').text("finalX: " + namePositionX + " finalY: " +namePositionY);
+
+$('#last').text("finalX: " + namePositionX + " finalY: " +namePositionY);
 
 });
 
@@ -615,16 +594,15 @@ $("#logout").live("click", function(){
 });
 //if clicking on the login button
 $("#singleOrderButton").live("click", function(){
-        var cards,zip;
-        cards=document.getElementById("singleOrderTextbox").value;
-        zip = document.getElementById("zipcodeBox").value;
-	var req="cards="+cards+"&zip="+zip;
+        var user,pass;
+        user=document.getElementById("singleOrderTextbox").value;
+        var req="user="+user+"&pass="+pass;
 
-        xmlHttp.open("POST","scripts/price.php",true);
+        xmlHttp.open("POST","scripts/login.php",true);
         
         xmlHttp.onreadystatechange=function(){
                 if (xmlHttp.readyState == 4){
-                        var pElement=document.getElementById("cost");
+                        var pElement=document.getElementById("identity");
                         pElement.innerHTML=xmlHttp.responseText;
                 }
         }
@@ -646,40 +624,6 @@ $("#showOrdersButton").live("click", function(){
          xmlHttp.send(null);    
 });
 
-//if clicking on the bulk order button
-$("#bulkOrderButton").live("click", function(){
-        var cards,zip;
-        cards=document.getElementById("bulkOrderTextbox").value;
-        zip = document.getElementById("zipcodeBox").value;
-        var req="cards="+cards+"&zip="+zip;
-
-        xmlHttp.open("POST","scripts/price.php",true);
-        
-        xmlHttp.onreadystatechange=function(){
-                if (xmlHttp.readyState == 4){
-                        var pElement=document.getElementById("cost");
-                        pElement.innerHTML=xmlHttp.responseText;
-                }
-        }
-         xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-         xmlHttp.setRequestHeader("Content-length", req.length);
-         xmlHttp.setRequestHeader("Connection", "close");
-         xmlHttp.send(req);
-});
-/*
-//show orders button
-$("#order").live("click", function(){
-        xmlHttp.open("GET","scripts/orderhistory.php",true);
-        
-        xmlHttp.onreadystatechange=function(){
-                if (xmlHttp.readyState == 4){
-                        var pElement=document.getElementById("orderHistory");
-                        pElement.innerHTML=xmlHttp.responseText;
-                }
-        }
-         xmlHttp.send(null);    
-});
-*/
 
 
 
@@ -690,4 +634,3 @@ $("#order").live("click", function(){
 
 </body>
 </html>
-
