@@ -1,32 +1,30 @@
-from student import*
+from student import *
 
-
-f=open('grades.txt','r')
-var=f.readline()#reads the first line
-vlist=var.split(',')
+f = open('grades.txt', 'r')
+# read the first line
+var = f.readline()
+vlist = var.split(',')
 print vlist
 
-num_Lab=vlist[0]
-num_test=vlist[1]
-Labw=vlist[2]
+num_lab = vlist[0]
+num_test = vlist[1]
+labw = vlist[2]
 
-studenttest= Student('Mike','Friend')
-studentlist=[]
-studentreal=False
+studenttest = Student('Mike','Friend')
+studentlist = []
+studentreal = False
 
 
 for line in f:
-
-	newline=line.split('\t')
-	first=newline[0]
-	last=newline[1]
-	grade=newline[2]
-	type=newline[3]
-	studentreal=False
+	newline = line.split('\t')
+	first = newline[0]
+	last = newline[1]
+	grade = newline[2]
+	type = newline[3]
+	studentreal = False
 	for item in studentlist:
-		
-                if first == item.first and last == item.last: #tests if the student object already exists
-                	studentreal=True
+            if first == item.first and last == item.last: #tests if the student object already exists
+                studentreal=True
 			if type == 'exam':
                         	print "added test to current"
 				item.add_test(grade)
